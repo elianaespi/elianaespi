@@ -1,0 +1,22 @@
+name: "SRI student"
+output_dir: "."
+navbar:
+  title: "Eliana"
+  left:
+    - text: "Projects"
+      href: project.html
+    - text: "Contact"
+      href: contact.html
+    - text: "Music"
+      href: mymusic.html
+    - text: "Poems"
+      href: poems.html
+
+  right:
+    - icon: fa-envelope fa-lg
+      href: contact.html
+
+output:
+  html_document:
+      theme: paper
+      css: 'styles.css'
