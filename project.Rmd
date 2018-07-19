@@ -3,8 +3,5 @@
 
 <link rel="stylesheet" href="styles.css" type="text/css">
 
-
-
-During the Summer of 2018, I participated in the Summer Research Institute (SRI) at STU, where we learned about XXXX and YYYY. 
-
-My project consisted of XXXX
+<center> ST. Thomas University Summer Research Institue 2018 <center>
+<img src="Slide1.jpg" style="width:65%; margin-center: 20px" align="center">
