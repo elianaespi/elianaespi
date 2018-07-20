@@ -5,3 +5,6 @@
 
 <center> ST. Thomas University Summer Research Institue 2018 <center>
 <img src="Slide1.jpg" style="width:65%; margin-center: 20px" align="center">
+
+<center> ST. Thomas University Summer Research Institue 2018 <center>
+<img src="SLIDE2.jpg" style="width:65%; margin-center: 20px" align="center">
