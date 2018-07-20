@@ -1,0 +1,124 @@
+---
+title: "Exploratory Data Analysis (EDA) on World Cup 2010 Players"
+author: Eliana Espinosa
+output: html_notebook
+---
+
+
+```{r, message=FALSE, warning=FALSE}
+library(tidyverse)
+myurl  <- "https://raw.githubusercontent.com/reisanar/datasets/master/worldcup.csv"
+mydata <- read_csv(myurl)
+```
+
+
+
+```{r}
+glimpse(mydata)
+```
+```{r}
+library(ggplot2)
+library(tidyverse)
+
+```
+
+```{r}
+#print the data frame
+mydata
+```
+```{r}
+# using plotly to help visualize better
+library(plotly)
+```
+
+```{r}
+player_passes <- ggplot(data = mydata, aes(x= Time, 
+                        y=Passes, color = Position)) +
+                        geom_point() 
+ggplotly(player_passes)
+```
+### The more time a player spends on the field, the more passes they are going to make.
+
+```{r}
+mydata %>%
+  filter(Passes > 400)
+```
+#### The majority of the players with the most passes come from Spain's soccer team which is actually the team that won the World cup for that year.  
+
+```{r}
+
+player_passes2 <- mydata %>%
+                  ggplot(aes(x= Time, y=Passes, 
+                             color = Position, size= Shots, 
+                             alpha= Tackles)) +
+                  geom_point() 
+                
+ggplotly(player_passes2)
+```
+
+
+## Which position tends to make more passes?
+```{r}
+plot1 <- ggplot(mydata, aes(Time, Passes)) + geom_point(aes(color = Position)) + 
+  scale_x_continuous("Time")+
+  scale_y_continuous("Passes")+
+  theme_bw() + labs(title="Passes Over Time by Position") + facet_wrap( ~ Position) 
+  ggplotly(plot1)
+```
+#### The midfielder position tends to make more passes.The goalkeeper hardly mkes any due to the fact that the only passes they make is when the ball reaches the goalie area.The defenders also make a lot of passes.
+
+
+## Which Soccer Team made the most passes in the Worldcup?
+```{r}
+plot2 <- ggplot(mydata) +
+  geom_boxplot(aes(Team, Passes, fill= Team)) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+ggplotly(plot2)
+```
+#### Spain has the largest amount of passes in the FIFA World Cup 2010, but has a lower median than Argentina.
+
+```{r}
+plot3 <- ggplot(mydata) +
+  geom_boxplot(aes(Team, Shots, fill= Team)) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+ggplotly(plot3)
+```
+
+
+
+
+## Which team had players that spent the least amount of time on the field?
+
+```{r}
+plot4 <- ggplot(mydata) +
+  geom_boxplot(aes(Team, Time, fill = Team)) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1 )) 
+ggplotly(plot4)
+```
+#### Honduras' players spent the least amount of time on the field.
+
+#### The teams that spent the most time on the field ,Spain and Netherlands made it to the final.
+
+
+
+## Below, we can count the amount of players that each team brought to the Worldcup.
+
+```{r}
+plot5 <- mydata %>%
+  ggplot() +
+  geom_histogram(aes(x= Team, fill = Position), stat = "count") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+ggplotly(plot5)
+```
+
+
+
+
+
+
+
+
+![](https://upload.wikimedia.org/wikipedia/commons/6/6e/STU_Logo_2017.png)
+
+
+

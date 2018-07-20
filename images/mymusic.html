@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title></title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
+<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
+<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 64px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+
+.section h2 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h3 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h4 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h5 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h6 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Eliana</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="project.html">Projects</a>
+</li>
+<li>
+  <a href="contact.html">Contact</a>
+</li>
+<li>
+  <a href="mymusic.html">Music</a>
+</li>
+<li>
+  <a href="poems.html">Poems</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="contact.html">
+    <span class="fa fa-envelope fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+
+</div>
+
+
+<p><link rel="stylesheet" href="styles.css" type="text/css"></p>
+<center>
+<center>
+<center>
+Album
+<center>
+<p><img src="IMG_5963.JPG" style="width:45%; margin-center: 20px" align="center"></p>
+<center>
+<div id="please-fall-in-love-with-me" class="section level2">
+<h2>1. Please Fall in Love With Me</h2>
+<p>It’s been a long time since I’ve had someone</p>
+<p>to hold me, comfort me, go out, and have some fun</p>
+<p>I’ve had my things, had my flings, but all them temporary</p>
+<p>Though I’m young I crave a love that’s complete</p>
+<p><span style="color:#C12283"
+> Chorus:</p>
+<p><span style="color:#C12283" 
+>Honey, I’m begging you to please fall in love with me</p>
+<p><span style="color:#C12283"
+>promise me that you won’t ever, ever for get me</p>
+<p><span style="color:#C12283"
+>I want to hear your favorite songs in a playlist</p>
+<p><span style="color:#C12283"
+>made just for me to listen to straight on repeat</p>
+<p><span style="color:#C12283"
+>but you only so recognize me</p>
+<p><span style="color:#C12283"
+>late at night when the moon has peaked</p>
+<p>I’ve been thinking about you since the minute we met</p>
+<p>Known you for 689 days can you do the math</p>
+<p>I can write infinite pages about my love for you</p>
+<p>for you there’s no limit on the amount of things I’d do</p>
+<p><span style="color:#C12283"
+>(chorus)</p>
+<p>Bridge:</p>
+<p>I have lost my sense of pride</p>
+<p>trust me, that I can’t deny</p>
+<p>thinking about you</p>
+<p>every minute of everyday</p>
+<p>but what can i say</p>
+<p><span style="color:#C12283"
+>(chorus)</p>
+<center>
+<center>
+</div>
+<div id="those-nights" class="section level2">
+<h2>2. Those Nights</h2>
+<p>Tell me how to feel when I’m alone</p>
+<p>teach me my way out of this deep hole</p>
+<p>cause I’m here without you in this broken road</p>
+<p>that leads me down the memories</p>
+<p>and has me trapped with broken wings</p>
+<p>while these thoughts of you keep haunting me</p>
+<p><span style="color:#C12283"
+>Chorus:</p>
+<p><span style="color:#C12283"
+>On those nights, on those nights</p>
+<p><span style="color:#C12283"
+>I just need to feel alright</p>
+<p><span style="color:#C12283"
+>How can I get through these thoughts of you</p>
+<p><span style="color:#C12283"
+>See your eyes in the stars, see your smile in the sky</p>
+<p><span style="color:#C12283"
+>Oh you pull me in just like the moon</p>
+<p><span style="color:#C12283"
+>I’m running out of things to do to get over you</p>
+<p>Tell me how to feel when I’m a mess</p>
+<p>what’s the way to end this loneliness?</p>
+<p>all those times with you I felt so blessed</p>
+<p>Now you’re gone.. who would’ve guessed</p>
+<p>that someone who claimed to love so deep</p>
+<p>would make these tears run down my cheek</p>
+<p>while these thoughts of you keep haunting me</p>
+<p><span style="color:#C12283"
+>(chorus)</p>
+<p>Bridge:</p>
+<p>On those nights</p>
+<p>I can’t help but replay all the tears</p>
+<p>On those nights</p>
+<p>I can’t help but remember the days you were here</p>
+<p>On those nights</p>
+<p>all I can think of is holding you tight</p>
+<p>in my arms.. for the rest of the night</p>
+<p>but you’re gone, yeah you lied</p>
+<p>and now I’m here lonely every damn night.</p>
+<p>ohh.. on those nights</p>
+<p><span style="color:#C12283"
+> (chorus)</p>
+</div>
+<div id="mess-with-my-heart" class="section level2">
+<h2>3. Mess With My Heart</h2>
+<p><span style="color:#C12283"
+>Chorus:</p>
+<p><span style="color:#C12283"
+>why do I always let them mess with my heart</p>
+<p><span style="color:#C12283"
+>my heart, my heart</p>
+<p><span style="color:#C12283"
+>why do I always let them rip me apart</p>
+<p><span style="color:#C12283"
+>apart, apart</p>
+<p><span style="color:#C12283"
+>and once that they’re gone, I’m never me again</p>
+<p>they really just don’t see how bad I’m suffering</p>
+<p>how could I possibly let them do this to me</p>
+<p>I do this constantly but always fail to see</p>
+<p>their true intentions the way they toy with me</p>
+<p>like they are kids again and I’m their barbie</p>
+<p>but I’m too blind to see that they’re not my Ken</p>
+<p>and they will never step up and be real men</p>
+<p><span style="color:#C12283" 
+>(chorus)</p>
+<p>they don’t seem to care, they’re bunch of conmen</p>
+<p>ready to trick my mind to get me involved with them</p>
+<p>but I’m so over them, need me a handyman</p>
+<p>one that’ll fix my heart, one that’ll take a stand</p>
+<p>tired of feeling nothing but broken</p>
+<p>after kiss, every hug</p>
+<p>every time I think I fall in love</p>
+<p><span style="color:#C12283"
+>(chorus)</p>
+<p>Bridge:</p>
+<p>my heart may never be the same</p>
+<p>after each one of their games</p>
+<p>day by day ripped into more pieces</p>
+<p>and the level of disappointment increases</p>
+<p>now the love left to share decreases</p>
+<p style="color:#C12283">
+(chorus)
+</p>
+</div>
+<div id="selfish" class="section level2">
+<h2>4. Selfish</h2>
+<p>many people tend to let go of the ones they love</p>
+<p>feelings aside, putting their love’s happiness above</p>
+<p>many people only want the best for their other half</p>
+<p>leaving them with nothing but a photograph</p>
+<p>but darling please know that I’m not one of them</p>
+<p>I guess once I fell for you I became thoughtless</p>
+<p><span style="color:#C12283"
+>Chorus:</p>
+<p><span style="color:#C12283"
+>So call me selfish</p>
+<p><span style="color:#C12283"
+>But I wouldn’t want to see you love anybody else</p>
+<p><span style="color:#C12283"
+>Because I love you and I want you all for myself</p>
+<p><span style="color:#C12283"
+>Don’t you know that I would give you the world</p>
+<p><span style="color:#C12283"
+>All the things I’d do to be your one and only girl</p>
+<p><span style="color:#C12283"
+>So call me selfish</p>
+<p><span style="color:#C12283"
+>But I wouldn’t want to see the day you leave this city</p>
+<p><span style="color:#C12283"
+>Because I love you and I don’t want you to leave me</p>
+<p><span style="color:#C12283"
+>Don’t you know that for you I would travel the world</p>
+<p><span style="color:#C12283"
+>All the roads I’d take to be your one and only girl</p>
+<p><span style="color:#C12283"
+>So call me selfish, yeah call me selfish</p>
+<p>sometimes I sit and think how much you mean to me</p>
+<p>I’ve got it real bad for you, that I guarantee</p>
+<p>want to make you smile, I just want to make you happy</p>
+<p>I want to be the only one that can make you feel complete</p>
+<p>Oh I know of a word for people like me, it’s egocentric</p>
+<p>but how can I not be when a love this good makes me oh so selfish</p>
+<p><span style="color:#C12283"
+>(chorus)</p>
+<p>Bridge: Your love has made me crazy</p>
+<p>Your love has made me greedy</p>
+<p>Your love has made me messy</p>
+<p>Your love has made me needy</p>
+<p>So call me selfish</p>
+<p>Call me selfish</p>
+<p>Call me… selfish</p>
+<p><span style="color:#C12283"
+>(chorus)</p>
+</div>
+<div id="misunderstood" class="section level2">
+<h2>5. Misunderstood</h2>
+<p>Misunderstood are these thoughts I have</p>
+<p>Man, can you explain these feelings</p>
+<p>Knowing this is love that can’t happen</p>
+<p>Knowing this is love that just can’t be</p>
+<p>if only i could express my every thought</p>
+<p>if only this was a love, a love that’s not wrong</p>
+<p><span style="color:#C12283"
+>(chorus)</p>
+<p><span style="color:#C12283"
+>For the most misunderstood love of all is forbidden</p>
+<p><span style="color:#C12283"
+>when all you feel has to be put away and hidden</p>
+<p><span style="color:#C12283"
+>Oh I know, I know you wouldn’t understand</p>
+<p><span style="color:#C12283"
+>But I never expected these feelings to expand</p>
+<p>Misunderstoon when I watch you speak</p>
+<p>Man, can you explain these fast heartbeats</p>
+<p>Knowing I can’t just look into eyes</p>
+<p>Knowing you’re not one I can go to when I cry</p>
+<p>If only I could express how you move my word</p>
+<p>If only I could tell you that you <em>are</em> my world</p>
+<p><span style="color:#C12283"
+>(chorus)</p>
+<p>Bridge:</p>
+<p>Misunderstood are the words of a girl</p>
+<p>A girl who may never be able to confess</p>
+<p>Who may beat around the bush, but not express</p>
+<p>A love that causes the most distress</p>
+<p>For the love she has for him is forbidden</p>
+<p><span style="color:#C12283"
+>(chorus)</p>
+</div>
+<div id="if-this-was-love" class="section level2">
+<h2>6. If This Was Love</h2>
+<p>no disrespect but I must admit</p>
+<p>you ruined my life in an instant</p>
+<p>unknowingly I fell for you</p>
+<p>I should’ve, I should’ve been more distant</p>
+<p>June 18th I remember</p>
+<p>when I decided I surrender</p>
+<p>thought maybe I’d found the one for me</p>
+<p>flashed by your smile in a bowling alley</p>
+<p>while first impressions are quite deciving</p>
+<p>something bout you is just so appeasing</p>
+<p><span style="color:#C12283"
+>chorus:</p>
+<p><span style="color:#C12283"
+>we’re not together but we act like we are</p>
+<p><span style="color:#C12283"
+>but the rush is amazing so far</p>
+<p><span style="color:#C12283"
+>baby I wonder baby I wonder</p>
+<p><span style="color:#C12283"
+>what things would be like</p>
+<p><span style="color:#C12283"
+>if this was love</p>
+<p><span style="color:#C12283"
+>if this was love</p>
+<p><span style="color:#C12283"
+>if this was love</p>
+<p><span style="color:#C12283"
+>love, love</p>
+<p>fine line between love and hate it’s true</p>
+<p>and I don’t know from which of the two to choose</p>
+<p>June 30 I remember</p>
+<p>the day felt colder than December</p>
+<p>birthday dinner you didn’t show up to</p>
+<p>I only wanted to spend that day with you</p>
+<p>and while you broke the promise to be there next to me</p>
+<p>still managed to forgive your unreliability</p>
+<p><span style="color:#C12283"
+>(chorus)</p>
+<p>Bridge:</p>
+<p>6 months going on and I’m still nothing to you</p>
+<p>you say you’re human and that you’ve got a heart too</p>
+<p>but darlin I can tell you why I don’t think that’s true</p>
+<blockquote>
+<p>(chorus)</p>
+</blockquote>
+</div>
+<div id="empty-space" class="section level2">
+<h2>7. Empty Space</h2>
+<p>Dating back and forth to fill that empty space</p>
+<p>Been feeling incomplete since I first saw your face</p>
+<p>Now I always feel the need to go out of my way</p>
+<p>To find someone, who might actually stay</p>
+<p>Texting back and forth, but there’s still that empty space</p>
+<p>No one’s really serious, this is a lousy game to play</p>
+<p>Because I’m only into 1 and that one is you</p>
+<p>But you’ve got someone that you’ve got to be true to</p>
+<p><span style="color:#C12283"
+>Chorus:</p>
+<p><span style="color:#C12283"
+>Since I’ve met you, nobody compares</p>
+<p><span style="color:#C12283"
+>Having trouble finding someone who cares</p>
+<p><span style="color:#C12283"
+>It’s like you’ve left me with an empty space</p>
+<p><span style="color:#C12283"
+>I’ve got to find the one who can take your place</p>
+<p>Dating back and forth to fill that empty space</p>
+<p>Been feeling incomplete since I first saw your face</p>
+<p>I’ve got nothing but high expectations for love</p>
+<p>Cuz you treat her like a queen and that’s all I can think of</p>
+<p>Chatting back and forth but am I even into him</p>
+<p>I don’t even think that he is ready to commit</p>
+<p>But I’m just spending time with every other guy</p>
+<p>To see which one could make me feel almost alive</p>
+<p><span style="color:#C12283"
+>(chorus)</p>
+<p>Bridge:</p>
+<p>Like damn, did I really think I could pull this off</p>
+<p>To ignore my love for you and replace you like a glove</p>
+<p>But I don’t think someone can fill an empty space</p>
+<p>That wasn’t meant to be filled by them anyway</p>
+<p>So I’ll go ahead and fill it with love for myself</p>
+<p>Because it’s what I deserve, not to be put on a shelf</p>
+<p><span style="color:#C12283"
+>Chorus #2:</p>
+<p><span style="color:#C12283"
+>Since I’ve met me, nobody compares</p>
+<p><span style="color:#C12283"
+>I’ve realized there’s nothing better than selfcare</p>
+<p><span style="color:#C12283"
+>And now that empty feeling, I no longer wear</p>
+<p><span style="color:#C12283"
+>I found a love greater than any, of that I am aware</p>
+<p>x 2</p>
+</div>
+<div id="it-couldve-been-you" class="section level2">
+<h2>8. It Could’ve Been You</h2>
+<p>you call me to tell me how much you miss me</p>
+<p>2am phone calls because you can’t sleep</p>
+<p>it hurts you to see him treat me like a queen</p>
+<p>he picked up my pieces, now he makes me feel happy</p>
+<p>my relationship with him, you should not speak of</p>
+<p>because when you had me you never valued my love</p>
+<p>now you can’t help but think that</p>
+<p><span style="color:#C12283"
+>Chorus:</p>
+<p><span style="color:#C12283"
+>it could’ve been you</p>
+<p><span style="color:#C12283"
+>it could’ve been you</p>
+<p><span style="color:#C12283"
+>it could’ve been, it could’ve been</p>
+<p><span style="color:#C12283"
+>it could’ve been you</p>
+<p><span style="color:#C12283"
+>it could’ve been you all along, you by my side</p>
+<p><span style="color:#C12283"
+>you til the day I die</p>
+<p><span style="color:#C12283"
+>it could’ve been, it could’ve been</p>
+<p><span style="color:#C12283"
+>it could’ve been you</p>
+<p>he makes me feel special and all warm inside</p>
+<p>all you knew how to do was make me cry</p>
+<p>but those tears are now dry, never felt more alive</p>
+<p>side by side, I’ll love him til earth no longer has life</p>
+<p>so hang up the phone, don’t call me again</p>
+<p>if I remember clearly, you didn’t want to be friends</p>
+<p>you don’t know how to live with yourself knowing that</p>
+<p><span style="color:#C12283"
+>(chorus)</p>
+<p>Bridge:</p>
+<p>you can’t just come back with my heart already fixed</p>
+<p>sorry you took so long to realize what you missed</p>
+<p>but darlin, I’m already his I’m already his</p>
+<p>you lost your chance, no more going back to this</p>
+<p>just know that</p>
+<p><span style="color:#C12283"
+>(chorus)</p>
+</div>
+<div id="butterflies" class="section level2">
+<h2>9. Butterflies</h2>
+<p>My oh my, I guess I should thank you</p>
+<p>For making me feel so brand new</p>
+<p>My thoughts on love have changed</p>
+<p>You’ve given me a whole different view</p>
+<p>This is all a whole new sensation</p>
+<p>Causing my heart acceleration</p>
+<p><span style="color:#C12283"
+>Chorus:</p>
+<p><span style="color:#C12283"
+>And my, my world is shaken</p>
+<p><span style="color:#C12283"
+>My breath’s been taken</p>
+<p><span style="color:#C12283"
+>My body’s numb but I can still feel these butterflies</p>
+<p><span style="color:#C12283"
+>Butterflies</p>
+<p><span style="color:#C12283"
+>I’ve been feeling nothing but these butterflies</p>
+<p><span style="color:#C12283"
+>Butterflies</p>
+<p><span style="color:#C12283"
+>Been a while since I last felt these butterflies</p>
+<p>My oh my, I guess you should know</p>
+<p>I finally look forward to seeing tomorrow</p>
+<p>I’m finally not scared of what my future holds</p>
+<p>Because I know I won’t be diving in solo</p>
+<p>You’ve got a place in me, and I a place in you</p>
+<p>And for you there’s nothing that I wouldn’t do</p>
+<p><span style="color:#C12283"
+>(chorus)</p>
+<p>Bridge:</p>
+<p>It’s refreshing to know you’re by my side</p>
+<p>The shy little girl no longer has to hide</p>
+<p>So much confidence and so much pride</p>
+<p>In knowing that you’ll forever be mine</p>
+<p><span style="color:#C12283"
+>(chorus)</p>
+</div>
+<div id="when-she-learned-to-let-go" class="section level2">
+<h2>10. When She Learned to Let Go</h2>
+<p>Young girl raised so beautifully sweet</p>
+<p>She’d tend to love a little too intensely</p>
+<p>Blinded by her lovely sunrise</p>
+<p>He refused to see past her shining light</p>
+<p>Young boy raised with hardships</p>
+<p>All he needed was companionship</p>
+<p>But nothing too serious like a relationship</p>
+<p>He failed to love her, he couldn’t commit</p>
+<p>Here she realized she needed to cut the strings</p>
+<p><span style="color:#C12283"
+>Chorus:</p>
+<p><span style="color:#C12283"
+>When she learned to let go</p>
+<p><span style="color:#C12283"
+>She could see her potential</p>
+<p><span style="color:#C12283"
+>And that there’s no one more special</p>
+<p><span style="color:#C12283"
+>Than the person she can be</p>
+<p><span style="color:#C12283"
+>And now she can finally breath</p>
+<p><span style="color:#C12283"
+>because she is finally free</p>
+<p><span style="color:#C12283"
+>When she learned to let go</p>
+<p>Young girl learning to spread her wings</p>
+<p>Each day more educated on brand new things</p>
+<p>She was a smart one, he says</p>
+<p>Now he regrets ever letting her walk away</p>
+<p>Young boy learning from his mistakes</p>
+<p>He didn’t realize how good she was for him</p>
+<p>Only she could see his light, though it was dim</p>
+<p>She refuses to look back, no returning to him</p>
+<p>Here she realized it was good to have cut the strings</p>
+<p><span style="color:#C12283"
+>(chorus)</p>
+<p>Bridge:</p>
+<p>All he did was hurt her</p>
+<p>He didn’t love her</p>
+<p>All he did was make her cry</p>
+<p>So she needed to say goodbye</p>
+<p>He didn’t see her worth</p>
+<p>Now he’s missing her</p>
+<p><span style="color:#C12283"
+>(chorus)</p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
