@@ -4,13 +4,15 @@
 <link rel="stylesheet" href="styles.css" type="text/css">
 
 <img src="eliana_pic.jpg" style="width:35%; margin-right: 20px" align="left">
-<img src="eliana_pic.jpg" style="width:35%; margin-right: 20px" align="left">
+
 
 
 
 ## About Me
 
 My name is Eliana Espinosa, I am currently a student at [St. Thomas University](https://www.stu.edu), majoring in *Mathematics*.I am 21 years old, I'm a cancer survivor, and I was born in Brooklyn, NY but was raised in Miami, FL. As a Math major, i have worked on several projects with R programming language and you can see them by clicking on the Projects tab. When I am not working or studying I like to write lyrics about different experiences in life. I have been writing for about 3 years  and my best song ideas tend to come to me late at night when I am trying to fall asleep. 
+
+<img src="eliana_logo.jpg" style="width:25%; margin-right: 20px" align="left">
 
 ## Musical Inspirations
 
